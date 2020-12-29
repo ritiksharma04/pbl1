@@ -1,0 +1,7 @@
+
+
+conn = mysql.connect()
+cursor =conn.cursor()
+
+cursor.execute("SELECT * from User")
+data = cursor.fetchone()
